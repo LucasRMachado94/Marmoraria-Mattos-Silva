@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x:auto;
+}
+
+header{
+    
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 1050px;
+    background-color: white;
+    position: fixed;
+}
+
+.container{
+   
+   display: flex;
+   justify-content: space-between; 
+   width: 990px;
+  
+    
+}
+
+.logo{
+ display: flex;
+ align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav .active a,
+nav a:hover{
+    background-color: #04458b;
+    color: #ffffff;
+}
+
+#banner{
+    background-image: url(../images/Background-cozinha.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+#info{
+display: flex;
+justify-content: center;
+width: 990px;
+padding: 15px;
+}
+
+.text_title{
+     text-shadow: 15px;
+     text-decoration: double;
+
+}
+
+.h1_title
+{
+display: flex;
+justify-content: center;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: #212529;
+}
+
+p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 101, 101);
+    padding: 3px;
+}
+
+.flex_item{
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    padding: 15px;
+
+}
+
+#galery{
+    margin-left: 30px;
+}
+
+hr{
+    margin-top: 100px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.158);
+   
+}
+
+#info_2{
+display: flex;
+justify-content: center;
+width: 990px;
+padding: 15px;
+background-color: #e7e7e7;
+}
+
+.about_text{
+    width: 450px;
+}
+
+.before_footer{
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.158);
+}
+
+#footer{
+display: flex;
+justify-content: center;
+width: 990px;
+padding: 15px;
+
+}
+
+.end_info{
+    display: flex;
+    justify-content: center;
+}
+
+.end_info a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(19, 23, 255);
+    padding: 3px;
+}
+
+.dev{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: rgb(185, 183, 183);
+    padding: 3px;
+}
+
+.map_area{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media (max-width:600px){
+ .h1_title{
+ justify-content: unset;
+ }
+
+nav ul{
+    display: unset;
+}
+
+.container{
+    flex-direction: column;
+    
+}
+
+.end_info{
+    display: unset;
+}
+
+#footer{
+    display: unset;
+}
+
+}
